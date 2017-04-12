@@ -7,7 +7,7 @@ services:
     tarantool:
         image: tarantool/tarantool:1.8
         volumes:
-            - ./opt:/opt/tarantool
+            - ./app:/opt/tarantool
             - tarantool:/var/lib/tarantool
 
 ### Volumes Setup ###########################################
