@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+### Tarantool Container #########################################
+
+    tarantool:
+        image: tarantool/tarantool:1.8
+        volumes:
+            - ./opt:/opt/tarantool
+            - tarantool:/var/lib/tarantool
+
+### Volumes Setup ###########################################
+
+volumes:
+    tarantool:
+        driver: "local"
